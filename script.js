@@ -29,16 +29,16 @@ const showQuestion = (json) => {
     }
     centered.innerHTML = questionsHTML;
     
-    document.addEventListener("click", (e) => {
-        if (e.target.classList.contains("show-answer-btn")) {
-            const answerElement = e.target.nextElementSibling;
-            answerElement.classList.toggle("hidden");
-    
-            if (answerElement.classList.contains("hidden")) {
-                e.target.textContent = "Show Answer";
-            } else {
-                e.target.textContent = "Hide Answer";
-            }
-        }
-    });
 }
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("show-answer-btn")) {
+    const answerElement = e.target.nextElementSibling;
+    answerElement.classList.toggle("hidden");
+
+        if (answerElement.classList.contains("hidden")) {
+            e.target.textContent = "Show Answer";
+        } else {
+            e.target.textContent = "Hide Answer";
+        }
+    }
+});
