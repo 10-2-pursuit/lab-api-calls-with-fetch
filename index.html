@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trivia Questions</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
   </head>
   <body>
     <header>
@@ -13,11 +14,34 @@
     </header>
     <section class="centered">
       <form>
-        <button type="submit">Get New Questions</button>
+          <label for="category">Select Category:</label>
+          <select id="category" name="category">
+            <option value="">Any Category</option>
+            <option value="History">History</option>
+            <option value="General Knowledge">General Knowledge</option>
+            <option value="Entertainment: Cartoon & Animations">Entertainment: Cartoon [&] Animations</option>
+            <option value="Entertainment: Video Games">Entertainment: Video Games</option>
+            <option value="Entertainment: Music">Entertainment: Music</option>
+            <option value="Science Mathematics">Science: Mathematics</option>
+            <option value="Science: Gadgets">Science: Gadgets</option>
+            <option value="Science & Nature">Science [&] Nature</option>
+            <option value="Sports">Sports</option>
+            <option value="Geography">Geography</option>
+            <option value="Entertainment: Japanese Anime & Manga">Entertainment: Japanese Anime [&] Manga</option>
+            <option value="Politics">Politics</option>
+            <option value="Art">Art</option>
+            <option value="Celebrities">Celebrities</option>
+            <option value="Entertainment: Board Games">Entertainment: Board Games</option>
+            <option value="Entertainment: Film">Entertainment: Film</option>
+            <option value="Entertainment: Books">Entertainment: Books</option>
+            <!-- Add more options for other categories -->
+          </select>
+        <button type="submit" onclick="fetchTriviaQuestions()">Get New Questions</button>
+        <button type="submit" onclick="resetForm()">Reset</button>
       </form>
     </section>
     <main class="centered">
-      <!-- Your `.card` elements should show up here. -->
+    
     </main>
   </body>
 </html>

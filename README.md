@@ -29,7 +29,7 @@ You may use the following HTML format for each trivia question. Replace the text
   <button>Show Answer</button>
   <p class="hidden">CORRECT ANSWER</p>
 </article>
-```
+```◊
 
 For the tests to pass, each question needs the `.card` class.
 

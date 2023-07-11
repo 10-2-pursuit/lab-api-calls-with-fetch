@@ -58,11 +58,36 @@ button:hover {
   background: #5c946e;
 }
 
-.card {
-  border: 3px solid #4f7d5d;
-  padding: 25px;
-}
 
 .hidden {
   display: none;
+}
+
+/* Card styles */
+.card {
+  border: 2px solid;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Difficulty styles */
+.easy {
+  border-color: yellow;
+}
+
+.medium {
+  border-color: orange;
+}
+
+.hard {
+  border-color: red;
+}
+
+/* Hide the correct answer by default */
+.hidden {
+  display: none;
+}
+
+input[type="submit"] {
+  display: inline-block;
 }
